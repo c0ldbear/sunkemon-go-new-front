@@ -5,10 +5,7 @@ type RegistrationModalProps = {
   onClose: () => void;
 };
 
-const RegistrationModal: React.FC<RegistrationModalProps> = ({
-  show,
-  onClose,
-}) => {
+const RegistrationModal = ({ show, onClose }: RegistrationModalProps) => {
   if (!show) return null;
 
   return (

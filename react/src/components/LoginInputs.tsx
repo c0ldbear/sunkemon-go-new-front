@@ -1,4 +1,17 @@
+import { useState } from "react";
+import RegistrationModal from "./RegistrationModal";
+
 function LoginInputs() {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleRegisterClick = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <div className="container my-5">
       <form>
@@ -15,9 +28,7 @@ function LoginInputs() {
               <button
                 type="button"
                 className="btn btn-secondary"
-                onClick={() => {
-                  /* Handle registration click */
-                }}
+                onClick={handleRegisterClick}
               >
                 Register
               </button>
@@ -25,6 +36,7 @@ function LoginInputs() {
           </div>
         </div>
       </form>
+      <RegistrationModal show={showModal} onClose={handleCloseModal} />
     </div>
   );
 }
