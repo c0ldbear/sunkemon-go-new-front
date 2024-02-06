@@ -1,4 +1,5 @@
 import React from "react";
+import Input from "./Input";
 
 type RegistrationModalProps = {
   show: boolean;
@@ -18,10 +19,10 @@ const RegistrationModal = ({ show, onClose }: RegistrationModalProps) => {
         className={`modal show ${show ? "d-block" : "d-none"}`}
         style={{ display: "block" }}
       >
-        <div className="modal-dialog">
+        <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-header">
-              <h5 className="modal-title">Register</h5>
+              <h5 className="modal-title">Register for Sunkemon Trainer</h5>
               <button
                 type="button"
                 className="btn-close"
@@ -31,6 +32,14 @@ const RegistrationModal = ({ show, onClose }: RegistrationModalProps) => {
             <div className="modal-body">
               {/* Registration form or content goes here */}
               <p>Registration form</p>
+              <Input label="Name" />
+              <Input label="Email" />
+              <Input label="Password" type="password" />
+              <Input
+                label="Password"
+                type="password"
+                placeholder="Confirm password"
+              />
             </div>
             <div className="modal-footer">
               <button

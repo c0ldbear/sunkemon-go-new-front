@@ -17,11 +17,10 @@ function LoginInputs() {
     <div className="container my-5">
       <form>
         <div className="row justify-content-center">
-          <div className="col-6">
+          <div className="col-5">
             <Input label="Email" />
             <Input label="Password" type="password" />
             <div className="d-grid gap-2">
-              {" "}
               {/* Bootstrap class to handle button spacing and width */}
               <button type="submit" className="btn btn-primary">
                 Submit

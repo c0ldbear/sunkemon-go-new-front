@@ -1,12 +1,24 @@
 import React from "react";
 
 type InputProps = {
-  label: string;
+  label: "Email" | "Password" | "Name";
   type?: string;
+  placeholder?: string;
 };
 
-function Input({ label, type = "text" }: InputProps) {
-  let icon = type === "text" ? "at" : "key";
+function Input({ label, type = "text", placeholder = "" }: InputProps) {
+  const icon = (() => {
+    switch (label.toLowerCase()) {
+      case "email":
+        return "at";
+      case "password":
+        return "key";
+      case "name":
+        return "person-arms-up";
+      default:
+        return "";
+    }
+  })();
 
   return (
     <div className="mb-3">
@@ -17,7 +29,7 @@ function Input({ label, type = "text" }: InputProps) {
         <input
           type={type}
           className="form-control"
-          placeholder={label}
+          placeholder={placeholder === "" ? label : placeholder}
           aria-label={label}
           aria-describedby="addon-wrapping"
         />
