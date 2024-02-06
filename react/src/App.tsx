@@ -1,32 +1,19 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+
 import "./App.css";
+import LoginForm from "./components/LoginInputs";
 
 function App() {
   return (
     <>
-      <div>
+      <div className="container justify-content-center">
         <h1>SunkemonGo</h1>
 
-        <p>Login</p>
-        <div className="login-form-group">
-          <form className="login-form">
-            <input
-              className="input-container"
-              type="text"
-              id="email"
-              placeholder="Email"
-              name="email"
-            />
-
-            <input
-              className="input-container"
-              type="text"
-              id="password"
-              placeholder="Password"
-              name="password"
-            />
-          </form>
+        <div className="mb-5 mt-3">
+          <h4>Welcome Sunkemon Trainer!</h4>
         </div>
-        <p>Sign up</p>
+        <LoginForm />
       </div>
     </>
   );
