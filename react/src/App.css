@@ -41,10 +41,25 @@
   color: #888;
 }
 
-.login-form {
-  margin-bottom: 20px;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: first baseline;
+/* Customized CSS */
+/* Custom overlay style */
+.custom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px); /* Adjust blur intensity as needed */
+  z-index: 1040; /* Overlay z-index to ensure it's below the modal but above other content */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Optional: Adds a dark semi-transparent background */
+}
+
+/* Ensure the modal is above the overlay */
+.modal.show {
+  z-index: 1050;
 }
