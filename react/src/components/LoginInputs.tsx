@@ -14,7 +14,7 @@ function LoginInputs() {
   };
 
   return (
-    <div className="w-100 ">
+    <div className="w-100">
       <form>
         <div className="row justify-content-center">
           <div className="">
