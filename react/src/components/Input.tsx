@@ -21,7 +21,7 @@ function Input({ label, type = "text", placeholder = "" }: InputProps) {
   })();
 
   return (
-    <div className="mb-3">
+    <div className="mb-3 w-100">
       <div className="input-group flex-nowrap">
         <span className="input-group-text" id="addon-wrapping">
           <i className={`bi bi-${icon}`} />

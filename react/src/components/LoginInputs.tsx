@@ -14,10 +14,10 @@ function LoginInputs() {
   };
 
   return (
-    <div className="container my-5">
+    <div className="w-100 ">
       <form>
         <div className="row justify-content-center">
-          <div className="col-5">
+          <div className="">
             <Input label="Email" />
             <Input label="Password" type="password" />
             <div className="d-grid gap-2">

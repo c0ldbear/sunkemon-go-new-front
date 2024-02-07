@@ -11,7 +11,10 @@ function App() {
         className="d-flex justify-content-center align-items-center"
         style={{ minHeight: "80vh" }}
       >
-        <div className="container debug">
+        <div
+          className="card
+         "
+        >
           <h1>SunkemonGo</h1>
 
           <div className="mb-1 mt-3">
