@@ -23,14 +23,14 @@ function LoginInputs() {
             <div className="d-grid gap-2">
               {/* Bootstrap class to handle button spacing and width */}
               <button type="submit" className="btn btn-primary">
-                Submit
+                Log In
               </button>
               <button
                 type="button"
                 className="btn btn-secondary"
                 onClick={handleRegisterClick}
               >
-                Register
+                Create new account
               </button>
             </div>
           </div>

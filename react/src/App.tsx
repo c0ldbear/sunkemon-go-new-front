@@ -7,13 +7,18 @@ import LoginForm from "./components/LoginInputs";
 function App() {
   return (
     <>
-      <div className="container justify-content-center">
-        <h1>SunkemonGo</h1>
+      <div
+        className="d-flex justify-content-center align-items-center"
+        style={{ minHeight: "80vh" }}
+      >
+        <div className="container debug">
+          <h1>SunkemonGo</h1>
 
-        <div className="mb-5 mt-3">
-          <h4>Welcome Sunkemon Trainer!</h4>
+          <div className="mb-1 mt-3">
+            <h4>Welcome Sunkemon Trainer!</h4>
+          </div>
+          <LoginForm />
         </div>
-        <LoginForm />
       </div>
     </>
   );

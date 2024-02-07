@@ -63,3 +63,7 @@
 .modal.show {
   z-index: 1050;
 }
+
+.debug {
+  background-color: aqua;
+}
